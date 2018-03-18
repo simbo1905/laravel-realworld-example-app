@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+pushd ${HOME} >/dev/null
+
+# {$HOME}/vendor is the composer from the previous build
+if [ -d ./vendor ]; then
+    tar cf - ./vendor
+fi
+
+popd >/dev/null
