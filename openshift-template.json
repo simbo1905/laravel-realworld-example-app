@@ -199,7 +199,7 @@
                 },
                 "livenessProbe": {
                   "httpGet": {
-                    "path": "/",
+                    "path": "/public/index.php",
                     "port": 8080,
                     "scheme": "HTTP"
                   },
@@ -211,7 +211,7 @@
                 },
                 "readinessProbe": {
                   "httpGet": {
-                    "path": "/",
+                    "path": "/public/index.php",
                     "port": 8080,
                     "scheme": "HTTP"
                   },
