@@ -6,6 +6,7 @@ if [[ -n "$SOURCE_REPOSITORY_REF" ]]; then
   echo git url is $SOURCE_REPOSITORY_URL
   echo git branch is $SOURCE_REPOSITORY_REF
   oc process -f openshift-template.json  \
+    -p MEMORY_LIMIT=256Mi \
     -p NAME=$NAME \
     -p NAMESPACE=$NAMESPACE \
     -p SOURCE_REPOSITORY_URL=$SOURCE_REPOSITORY_URL \
