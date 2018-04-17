@@ -35,8 +35,8 @@
         "ports": [
           {
             "name": "web",
-            "port": 8000,
-            "targetPort": 8000
+            "port": 8080,
+            "targetPort": 8080
           }
         ],
         "selector": {
@@ -176,7 +176,7 @@
                 "image": " ",
                 "ports": [
                   {
-                    "containerPort": 8000
+                    "containerPort": 8080
                   }
                 ],
                 "envFrom": [
@@ -200,7 +200,7 @@
                 "livenessProbe": {
                   "httpGet": {
                     "path": "/",
-                    "port": 8000,
+                    "port": 8080,
                     "scheme": "HTTP"
                   },
                   "initialDelaySeconds": 3,
@@ -212,7 +212,7 @@
                 "readinessProbe": {
                   "httpGet": {
                     "path": "/",
-                    "port": 8000,
+                    "port": 8080,
                     "scheme": "HTTP"
                   },
                   "initialDelaySeconds": 3,
