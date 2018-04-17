@@ -245,7 +245,7 @@
                 },
                 "livenessProbe": {
                   "httpGet": {
-                    "path": "/api/hello",
+                    "path": "/",
                     "port": 8000,
                     "scheme": "HTTP"
                   },
@@ -257,7 +257,7 @@
                 },
                 "readinessProbe": {
                   "httpGet": {
-                    "path": "/api/ready",
+                    "path": "/",
                     "port": 8000,
                     "scheme": "HTTP"
                   },
