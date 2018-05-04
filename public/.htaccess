@@ -20,7 +20,7 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 <IfModule mod_headers.c>
-    Header add Access-Control-Allow-Origin "*"
+    Header add Access-Control-Allow-Origin "frontend-sjm-staging.a3c1.starter-us-west-1.openshiftapps.com"
     Header add Access-Control-Allow-Headers "accept, access-control-allow-origin, content-type"
     Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
 </IfModule>
