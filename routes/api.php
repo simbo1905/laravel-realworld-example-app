@@ -15,7 +15,7 @@ Route::group(['namespace' => 'Api'], function () {
 
     Route::post('users/login', 'AuthController@login');
     //Route::post('users', 'AuthController@register');
-    Route::match(['put', 'options'], 'users', 'AuthController@register');
+    Route::match(['post', 'options'], 'users', 'AuthController@register');
 
     Route::get('user', 'UserController@index');
     Route::match(['put', 'patch', 'options'], 'user', 'UserController@update');
