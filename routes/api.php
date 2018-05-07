@@ -17,7 +17,7 @@ Route::group(['namespace' => 'Api'], function () {
     Route::post('users', 'AuthController@register');
 
     Route::get('user', 'UserController@index');
-    Route::match(['put', 'patch'], 'user', 'UserController@update');
+    Route::match(['put', 'patch', 'options'], 'user', 'UserController@update');
 
     Route::get('profiles/{user}', 'ProfileController@show');
     Route::post('profiles/{user}/follow', 'ProfileController@follow');
